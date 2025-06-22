@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Deer</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="img/Logo 2.png" alt="Logotype">
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <div class="header__menu">
+                            <ul>
+                                <li>
+                                    <a href="#about" class="anchor">About</a>
+                                </li>
+                                <li>
+                                    <a href="#projects" class="anchor">Our work</a>
+                                </li>
+                                <li>
+                                    <a href="#advantages" class="anchor">Advantages</a>
+                                </li>
+                            </ul>
+                            <a class="header__button main-btn anchor" href="#contacts">Contact Us</a>
+                        </div>
+                    </nav>
+                    <button class="burger burger2"><span></span></button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="heroscreen">
+                <div class="gradient-bg">
+                    <svg xmlns='http://www.w3.org/2000/svg' class="noiseBg">
+                        <filter class='noiseFilterBg'>
+                            <feTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch' />
+                        </filter>
+
+                        <rect width='100%' height='100%' preserveAspectRatio="xMidYMid meet"
+                            filter='url(#noiseFilterBg)' />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+                        <defs>
+                            <filter class="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                                <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                        </defs>
+                    </svg>
+                    <div class="gradients-container">
+                        <div class="g1"></div>
+                        <div class="g2"></div>
+                        <div class="g3"></div>
+                        <div class="g4"></div>
+                        <div class="g5"></div>
+                        <div class="interactive"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="heroscreen__descr">
+                        <h1 class="animated-text">
+                            Web Solutions That Stand Out
+                        </h1>
+                        <p>
+                            We create modern, fully responsive websites tailored to your business needs. From concept to
+                            launch, our team handles the entire process using WordPress CMS for easy content management.
+                            With a focus on clean design and solid performance, we build solutions that grow with your
+                            brand.
+                        </p>
+                    </div>
+                </div>
+                <img src="img/index_main_bg.svg" alt="Image">
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about__descr">
+                        <h2>
+                            New crypto finance app
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                            commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
+                            imperdiet. Nunc ut sem vitae risus tristique posuere.
+                        </p>
+                    </div>
+                </div>
+                <div class="about__wrapper">
+                    <div class="swiper aboutslider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="about__item">
+                                    <img src="img/services/html-5-svgrepo-com.svg" alt="">
+                                    <div class="content">
+                                        <p>
+                                            Using html 5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__item">
+                                    <img src="img/services/css-3-svgrepo-com.svg" alt="">
+                                    <div class="content">
+                                        <p>
+                                            Cascade style Sheets
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__item">
+                                    <img src="img/services/js-svgrepo-com.svg" alt="">
+                                    <div class="content">
+                                        <p>
+                                            Java Script program language
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__item">
+                                    <img src="img/services/jquery-1-logo-svgrepo-com.svg" alt="">
+                                    <div class="content">
+                                        <p>
+                                            Jquery library
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__item">
+                                    <img src="img/services/bootstrap-svgrepo-com.svg" alt="">
+                                    <div class="content">
+                                        <p>
+                                            Bootrtrap library
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__item">
+                                    <img src="img/services/wordpress-svgrepo-com.svg" alt="">
+                                    <div class="content">
+                                        <p>
+                                            BackEnd on CMS WordPress
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__item">
+                                    <img src="img/services/php-1-logo-svgrepo-com.svg" alt="">
+                                    <div class="content">
+                                        <p>
+                                            Using PHP programming for BackEnd
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <div class="container">
+                    <div class="projects__wrapper">
+
+                        <div class="projects__item" style="top: 120px; z-index: 1;" loading="lazy">
+                            <div class="projects__descr">
+                                <h2>
+                                    Our work
+                                </h2>
+                            </div>
+                            <div class="projects__item-content">
+                                <img src="img/Projects/Hold-IT.png" alt="Hold IT">
+                                <div class="projects__item-descr">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure omnis
+                                        quasi accusantium minima expedita similique quod, quo reprehenderit. Aliquid
+                                        eius pariatur odit consequatur repellat nostrum natus? Autem, facilis earum.
+                                    </p>
+                                    <a target="_blank" href="https://hold-it.fr/" class="main-btn">
+                                        Go to site
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.495 6.49497C12.7683 6.22161 12.7683 5.77839 12.495 5.50502L8.0402 1.05025C7.76683 0.776885 7.32362 0.776885 7.05025 1.05025C6.77689 1.32362 6.77689 1.76683 7.05025 2.0402L11.0101 6L7.05025 9.9598C6.77689 10.2332 6.77689 10.6764 7.05025 10.9497C7.32362 11.2231 7.76684 11.2231 8.0402 10.9497L12.495 6.49497ZM6.11959e-08 6.7L12 6.7L12 5.3L-6.11959e-08 5.3L6.11959e-08 6.7Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__item" style="top: 230px; z-index: 2;">
+                            <div class="projects__item-content">
+                                <img src="img/Projects/vilson.png" alt="Vilson" loading="lazy">
+                                <div class="projects__item-descr">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure omnis
+                                        quasi accusantium minima expedita similique quod, quo reprehenderit. Aliquid
+                                        eius pariatur odit consequatur repellat nostrum natus? Autem, facilis earum.
+                                    </p>
+                                    <a target="_blank" href="https://www.vilson.com.ua/en/" class="main-btn">
+                                        Go to site
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.495 6.49497C12.7683 6.22161 12.7683 5.77839 12.495 5.50502L8.0402 1.05025C7.76683 0.776885 7.32362 0.776885 7.05025 1.05025C6.77689 1.32362 6.77689 1.76683 7.05025 2.0402L11.0101 6L7.05025 9.9598C6.77689 10.2332 6.77689 10.6764 7.05025 10.9497C7.32362 11.2231 7.76684 11.2231 8.0402 10.9497L12.495 6.49497ZM6.11959e-08 6.7L12 6.7L12 5.3L-6.11959e-08 5.3L6.11959e-08 6.7Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__item" style="top: 240px; z-index: 3;" loading="lazy">
+                            <div class="projects__item-content">
+                                <img src="img/Projects/TKN.png" alt="TKN">
+                                <div class="projects__item-descr">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure omnis
+                                        quasi accusantium minima expedita similique quod, quo reprehenderit. Aliquid
+                                        eius pariatur odit consequatur repellat nostrum natus? Autem, facilis earum.
+                                    </p>
+                                    <a target="_blank" href="https://tkn.ua/en/" class="main-btn">
+                                        Go to site
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.495 6.49497C12.7683 6.22161 12.7683 5.77839 12.495 5.50502L8.0402 1.05025C7.76683 0.776885 7.32362 0.776885 7.05025 1.05025C6.77689 1.32362 6.77689 1.76683 7.05025 2.0402L11.0101 6L7.05025 9.9598C6.77689 10.2332 6.77689 10.6764 7.05025 10.9497C7.32362 11.2231 7.76684 11.2231 8.0402 10.9497L12.495 6.49497ZM6.11959e-08 6.7L12 6.7L12 5.3L-6.11959e-08 5.3L6.11959e-08 6.7Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__item" style="top: 250px; z-index: 4;" loading="lazy">
+                            <div class="projects__item-content">
+                                <img src="img/Projects/Kolyar-export.png" alt="Kolyar Export">
+                                <div class="projects__item-descr">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure omnis
+                                        quasi accusantium minima expedita similique quod, quo reprehenderit. Aliquid
+                                        eius pariatur odit consequatur repellat nostrum natus? Autem, facilis earum.
+                                    </p>
+                                    <a target="_blank" href="https://www.kolyar-export.com.ua/" class="main-btn">
+                                        Go to site
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.495 6.49497C12.7683 6.22161 12.7683 5.77839 12.495 5.50502L8.0402 1.05025C7.76683 0.776885 7.32362 0.776885 7.05025 1.05025C6.77689 1.32362 6.77689 1.76683 7.05025 2.0402L11.0101 6L7.05025 9.9598C6.77689 10.2332 6.77689 10.6764 7.05025 10.9497C7.32362 11.2231 7.76684 11.2231 8.0402 10.9497L12.495 6.49497ZM6.11959e-08 6.7L12 6.7L12 5.3L-6.11959e-08 5.3L6.11959e-08 6.7Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__item" style="top: 260px; z-index: 5;" loading="lazy">
+                            <div class="projects__item-content">
+                                <img src="img/Projects/Dez-Taktik.png" alt="Dez Taktik">
+                                <div class="projects__item-descr">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure omnis
+                                        quasi accusantium minima expedita similique quod, quo reprehenderit. Aliquid
+                                        eius pariatur odit consequatur repellat nostrum natus? Autem, facilis earum.
+                                    </p>
+                                    <a target="_blank" href="https://dez-tactic.pro/" class="main-btn">
+                                        Go to site
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.495 6.49497C12.7683 6.22161 12.7683 5.77839 12.495 5.50502L8.0402 1.05025C7.76683 0.776885 7.32362 0.776885 7.05025 1.05025C6.77689 1.32362 6.77689 1.76683 7.05025 2.0402L11.0101 6L7.05025 9.9598C6.77689 10.2332 6.77689 10.6764 7.05025 10.9497C7.32362 11.2231 7.76684 11.2231 8.0402 10.9497L12.495 6.49497ZM6.11959e-08 6.7L12 6.7L12 5.3L-6.11959e-08 5.3L6.11959e-08 6.7Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__item" style="top: 270px; z-index: 6;" loading="lazy">
+                            <div class="projects__item-content">
+                                <img src="img/Projects/Aksioma.png" alt="Aksioma">
+                                <div class="projects__item-descr">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure omnis
+                                        quasi accusantium minima expedita similique quod, quo reprehenderit. Aliquid
+                                        eius pariatur odit consequatur repellat nostrum natus? Autem, facilis earum.
+                                    </p>
+                                    <a target="_blank" href="https://aksioma.if.ua/" class="main-btn">
+                                        Go to site
+                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.495 6.49497C12.7683 6.22161 12.7683 5.77839 12.495 5.50502L8.0402 1.05025C7.76683 0.776885 7.32362 0.776885 7.05025 1.05025C6.77689 1.32362 6.77689 1.76683 7.05025 2.0402L11.0101 6L7.05025 9.9598C6.77689 10.2332 6.77689 10.6764 7.05025 10.9497C7.32362 11.2231 7.76684 11.2231 8.0402 10.9497L12.495 6.49497ZM6.11959e-08 6.7L12 6.7L12 5.3L-6.11959e-08 5.3L6.11959e-08 6.7Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts" id="contacts">
+                <div class="gradient-bg">
+                    <svg xmlns='http://www.w3.org/2000/svg' class="noiseBg">
+                        <filter class='noiseFilterBg'>
+                            <feTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch' />
+                        </filter>
+
+                        <rect width='100%' height='100%' preserveAspectRatio="xMidYMid meet"
+                            filter='url(#noiseFilterBg)' />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+                        <defs>
+                            <filter class="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                                <feBlend in="SourceGraphic" in2="goo" />
+                            </filter>
+                        </defs>
+                    </svg>
+                    <div class="gradients-container">
+                        <div class="interactive"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="contacts__inner">
+                        <div class="contacts__bg">
+                            <img src="img/subscribeimg.svg" alt="contacts" loading="lazy">
+                        </div>
+                        <div class="contacts__form">
+                            <div class="contacts__title">
+                                <h2>
+                                    Have questions?
+                                </h2>
+                                <p>
+                                    Fill the form below and we will contact You!
+                                </p>
+                            </div>
+                            <form action="">
+                                <input type="text" placeholder="First name*">
+                                <input type="text" placeholder="Last name*">
+                                <input type="text" placeholder="Email*">
+                                <textarea placeholder="Message"></textarea>
+                                <button class="main-btn">
+                                    Send message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <img src="img/Logo 2.png" alt="image">
+                        </a>
+                        <div class="footer__copy">
+                            <p>
+                                © 2025 WebDeer, All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__info">
+                        <ul class="footer__menu">
+                            <li>
+                                <a href="#about" class="anchor">About</a>
+                            </li>
+                            <li>
+                                <a href="#projects" class="anchor">Our work</a>
+                            </li>
+                            <li>
+                                <a href="#contacts" class="anchor">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__contact">
+                            <li>
+                                <span>
+                                    Phone:
+                                </span>
+                                <a href="tel:845-774-2615">845-774-2615</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__contact">
+                            <li>
+                                <span>
+                                    Corporation Post:
+                                </span>
+                                <a href="mailto:info@webdev.net">info@webdev.net</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__links">
+                        <h3>
+                            Socials:
+                        </h3>
+                        <ul>
+                            <li>
+                                <a target="_blank" href="">
+                                    <img src="img/socials/facebook-svgrepo-com.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="">
+                                    <img src="img/socials/instagram-svgrepo-com.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="">
+                                    <img src="img/socials/linkedin-svgrepo-com.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__copy">
+                        <p>
+                            © 2025 WebDeer, All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

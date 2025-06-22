@@ -1,0 +1,441 @@
+$mainColor: #010225;
+$mainViolet: #0C0D2E;
+$mainBlue: #1f3f95;
+$mainPurple: #7931e9;
+$lightBlue: #73c6d3;
+$accentTurquoise: #4de3d3;
+$highlightPink: #d946ef;
+$textGray: #cdd4f6;
+$textMuted: #8a90b2;
+$borderDark: #1a1b3a;
+
+$circleSize: 80%;
+
+
+@keyframes moveInCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveVertical {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    50% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(-50%) translateY(-10%);
+    }
+
+    50% {
+        transform: translateX(50%) translateY(10%);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-10%);
+    }
+}
+
+.gradient-bg {
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(40deg, $mainColor, $mainViolet);
+    top: 0;
+    right: 0;
+    opacity: 1;
+
+    .svgBlur {
+        display: none;
+    }
+
+    .noiseBg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        mix-blend-mode: soft-light;
+        opacity: 0.2;
+    }
+
+    .gradients-container {
+        filter: blur(40px);
+        width: 100%;
+        height: 100%;
+    }
+
+    .g1 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($accentTurquoise, 0.4) 0, rgba($accentTurquoise, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+
+        width: $circleSize;
+        height: $circleSize;
+        top: calc(50% - $circleSize / 2);
+        left: calc(50% - $circleSize / 2);
+        transform-origin: center center;
+        animation: moveVertical 30s ease infinite;
+        opacity: 0.6;
+    }
+
+    .g2 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($mainBlue, 0.4) 0, rgba($mainBlue, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+
+        width: $circleSize;
+        height: $circleSize;
+        top: calc(50% - $circleSize / 2);
+        left: calc(50% - $circleSize / 2);
+        transform-origin: calc(50% - 400px);
+        animation: moveInCircle 20s reverse infinite;
+        opacity: 0.7;
+    }
+
+    .g3 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($lightBlue, 0.4) 0, rgba($lightBlue, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+        width: $circleSize;
+        height: $circleSize;
+        top: calc(50% - $circleSize / 2 + 200px);
+        left: calc(50% - $circleSize / 2 - 500px);
+        transform-origin: calc(50% + 400px);
+        animation: moveInCircle 40s linear infinite;
+        opacity: 0.6;
+    }
+
+    .g4 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($highlightPink, 0.5) 0, rgba($mainBlue, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+        width: $circleSize;
+        height: $circleSize;
+        top: calc(50% - $circleSize / 2);
+        left: calc(50% - $circleSize / 2);
+        transform-origin: calc(50% - 200px);
+        animation: moveHorizontal 40s ease infinite;
+        opacity: 0.6;
+    }
+
+    .g5 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($mainPurple, 0.5) 0, rgba($highlightPink, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+        width: calc($circleSize * 2);
+        height: calc($circleSize * 2);
+        top: calc(50% - $circleSize);
+        left: calc(50% - $circleSize);
+        transform-origin: calc(50% - 800px) calc(50% + 200px);
+        animation: moveInCircle 20s ease infinite;
+        opacity: 0.6;
+    }
+
+    .interactive {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba($mainBlue, 0.5) 0, rgba($mainPurple, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+        width: 100%;
+        height: 100%;
+        top: -50%;
+        left: -50%;
+        opacity: 1;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+button:focus,
+input:focus {
+    outline: transparent;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0 0 10px;
+    line-height: 140%;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 140%;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 130%;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 130%;
+    font-weight: 500;
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+    max-width: 100vw;
+    cursor: default;
+    color: #f2f2f2;
+    font-family: "Noto Sans", sans-serif;
+
+    &:after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $borderDark;
+        backdrop-filter: blur(1px);
+        transition: .3s ease-in-out;
+        z-index: 0;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    &.on {
+        &:after {
+            z-index: 1;
+            opacity: 0.6;
+            visibility: visible;
+        }
+    }
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.main-btn {
+    border: 2px solid #f2f2f2;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 130%;
+    transition: .4s;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+     background-color: transparent;
+     cursor: pointer;
+
+    svg {
+        margin-left: 10px;
+        transition: .4s;
+
+        path {
+            transition: .4s;
+        }
+    }
+
+    &:after {
+        content: '';
+        background: linear-gradient(135deg, $mainBlue 0%, $mainPurple 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: translateY(100%);
+        transition: .2s;
+    }
+
+    &:hover {
+        &:after {
+            transform: translateY(0%);
+        }
+
+        color: $lightBlue;
+        border-color: $lightBlue;
+
+        svg {
+            transform: translateX(3px);
+
+            path {
+                fill: $lightBlue;
+            }
+        }
+    }
+}
+
+
+.animated-text {
+    &:after {
+        content: '|';
+        animation: blinkCursor 0.7s infinite;
+    }
+}
+
+@keyframes blinkCursor {
+
+    0%,
+    100% {
+        color: transparent;
+    }
+
+    50% {
+        color: $lightBlue;
+    }
+}
+
+
+
+
+// ADAPTIVE //
+
+@media (max-width:1399.8px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:991.8px) {
+    .main-btn {
+        height: 40px;
+        padding: 10px 17px;
+        border-width: 1px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:767.8px) {
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:575.8px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
