@@ -111,5 +111,31 @@ $(document).ready(function () {
         $('body').removeClass('on');
     });
 
+    // Paralax 
+
+    const paralaxBox = $('.paralax__box');
+    const layers = $('.paralax__layer');
+
+    const paralax = function (evt) {
+
+        const paralaxWidth = paralaxBox.innerWidth();
+        const paralaxHeight = paralaxBox.innerHeight();
+
+        const coordX = evt.pageX - paralaxWidth;
+        const coordY = evt.pageY - paralaxHeight;
+
+        layers.each(function () {
+            const layerSpeed = $(this).data('speed');
+            const x = (coordX * layerSpeed).toFixed(1);
+            const y = (coordY * layerSpeed).toFixed(1);
+            $(this).css('transform', `translate(${x}px, ${y}px)`);
+            console.log(layerSpeed);
+        });
+    }
+
+    $(window).on('mousemove', paralax)
+
+
+
 
 });

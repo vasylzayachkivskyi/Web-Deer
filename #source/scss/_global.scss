@@ -11,6 +11,10 @@ $borderDark: #1a1b3a;
 
 $circleSize: 80%;
 
+.paralax__layer{
+    transition: .3s ease;
+}
+
 
 @keyframes moveInCircle {
     0% {
