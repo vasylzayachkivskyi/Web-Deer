@@ -8,7 +8,6 @@ $highlightPink: #d946ef;
 $textGray: #cdd4f6;
 $textMuted: #8a90b2;
 $borderDark: #1a1b3a;
-
 $circleSize: 80%;
 
 .paralax__layer{
@@ -261,7 +260,7 @@ body {
         height: 100vh;
         background-color: $borderDark;
         backdrop-filter: blur(1px);
-        transition: .3s ease-in-out;
+        transition: .3s;
         z-index: 0;
         opacity: 0;
         visibility: hidden;
@@ -270,7 +269,7 @@ body {
 
     &.on {
         &:after {
-            z-index: 1;
+            z-index: 10;
             opacity: 0.6;
             visibility: visible;
         }
