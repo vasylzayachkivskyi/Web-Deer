@@ -265,6 +265,10 @@
 // ADAPTIVE //
 
 @media (max-width:1599.8px) {
+    .projects__item-descr {
+        padding: 70px 30px 50px;
+    }
+
     .heroscreen {
         padding-top: 260px;
     }
@@ -278,6 +282,10 @@
 }
 
 @media (max-width:991.8px) {
+    .projects__item-descr {
+        padding: 35px 25px 40px;
+    }
+
     .projects__item:first-child {
         top: 125px !important;
     }
@@ -334,11 +342,11 @@
     }
 
     .projects__item-descr {
-        padding: 50px 25px 40px;
+        padding: 30px 25px 40px;
     }
 
     .projects__item-descr p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .projects {
@@ -363,7 +371,7 @@
     }
 
     .projects__item-descr p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .heroscreen>img {
